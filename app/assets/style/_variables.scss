@@ -1,0 +1,17 @@
+$success:#198754;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 3,
+);
+
+$nav-link-padding-x:2rem;
+$nav-link-color: black;
+$nav-link-hover-color:$success;
+$nav-link-font-weight:700;

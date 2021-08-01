@@ -1,0 +1,20 @@
+.l-aside {
+    width: 296px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.l-aside__nav--active {
+    color: $success;
+    border-left: 4px solid $success;
+}
+
+.l-main {
+    padding: 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
