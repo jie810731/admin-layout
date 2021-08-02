@@ -1,0 +1,163 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<nav class="navbar navbar-light">
+    <div class="d-flex">
+        <h4 class="navbar-brand">Assignment</h4>
+        <select class="form-select ps-0">
+            <option selected>All Courses</option>
+        </select>
+    </div>
+    <div>
+        <span class="material-icons me-4">
+            search
+        </span>
+        <span class="material-icons">
+            notifications
+        </span>
+    </div>
+</nav>
+<div class="d-flex justify-content-between align-items-center">
+    <select class="p-assignment-category form-select ps-0 pe-1">
+        <option selected>All (4)</option>
+    </select>
+    <small class="x-light-font-size color-gray-600">
+        2 comments
+    </smll>
+</div>
+<div class="d-flex justify-content-between">
+    <div class="col-4 me-3">
+        <ul class="list-group assignment__summaryList">
+            <li class="list-group-item list-group-item-gray-100">
+                <div class="color-gray-900">
+                    <div class="d-flex justify-content-between">
+                        <p>Chapter Assignment 2</p>
+                        <p>4 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Please check this file…</h6>
+                        <small class="color-gray-600">Emily Wang</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="color-gray-900">
+                    <div class="d-flex justify-content-between">
+                        <p>Chapter Assignment 1</p>
+                        <p>12 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>My Homework</h6>
+                        <small class="color-gray-600">David Xu</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="color-gray-900">
+                    <div class="d-flex justify-content-between">
+                        <p>Final Assignment</p>
+                        <p>18 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Have a problem with this…</h6>
+                        <small class="color-gray-600">Tony Wei</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="color-gray-900">
+                    <div class="d-flex justify-content-between">
+                        <p>Final Assignment</p>
+                        <p>19 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Did I do it right?</h6>
+                        <small class="color-gray-600">Christina Lin</small>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <div class="card mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="color-gray-900">
+                    <small class="x-light-font-size">Chapter Assignment 2 / HTML&CSS</small>
+                    <h6 class="fw-bold">Please check this file for me, thanks!</h6>
+                </div>
+                <span class="material-icons">
+                    more_vert
+                </span>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0">
+                    <div class="card border-0 flex-row pt-2 color-gray-900">
+                        <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" alt="" class="userImage me-2 flex-shrink-0">
+                        <div class="border-bottom pb-3">
+                            <h6 class="card-title fw-bold mb-1">Emily Wang</h6>
+                            <small class="d-block x-light-font-size color-gray-600 mb-3">10:38 AM (4 hours ago)</small>
+                            <p class="card-text fs-6 mb-3">
+                                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success second-font-family">div</span> is bigger than the height of the img ? There is a gap below the <span class="text-success second-font-family">image</span>, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                            </p>
+                            <button type="button" class="btn btn-light">
+                                <span class="material-icons align-middle">attach_file</span>
+                                HW-2-David.zip
+                            </button>
+                    </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                    <div class="card border-0 flex-row pt-2 color-gray-900">
+                        <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="" class="userImage me-2 flex-shrink-0">
+                        <div class="pb-3">
+                            <div class="mb-3 d-flex justify-content-between">
+                                <div>
+                                    <h6 class="card-title fw-bold mb-1">Andy Chen (You)</h6>
+                                    <small class="d-block x-light-font-size color-gray-600">13:24 AM (1 hours ago)</small>
+                                </div>
+                                <div class="">
+                                    <span class="material-icons me-4">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        edit
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-6 mb-3">
+                                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br> 
+                                <br>
+                                You can:
+                                <br>
+                            </p>
+                            <ul class="defaul-ul fs-7">
+                                <li>adjust the <span class="text-success second-font-family">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success second-font-family">middle</span> ) or</li>
+                                <li>change the <span class="text-success second-font-family">display</span> so it isn’t inline.</li>
+                            </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <span class="material-icons me-4">
+                    chevron_left
+                </span>
+                <span class="material-icons">
+                    chevron_right
+                </span>  
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-success py-2 px-5 me-3">
+                    Mark as read
+                </button>
+                <button type="button" class="btn btn-success py-2 px-5">
+                    Reply
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,9 +1,14 @@
 .l-aside {
-    width: 296px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
+    flex: 0 0 296px;
+    background: $light;
+    .fixed {
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .l-aside__nav--active {
@@ -17,4 +22,6 @@
 
 .navbar-brand {
     font-weight: bold;
+    margin-right: 3rem;
+    margin-bottom: 0;
 }

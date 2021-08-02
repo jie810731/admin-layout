@@ -1,6 +1,10 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
 @import "variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "fonts";
 @import "base";
 @import "layout";
+@import "utilities";
 @import "component";
+@import "pages/assignment";

@@ -1,6 +1,20 @@
-$success:#198754;
+$font-colors:(
+  "gray-100":$gray-100,
+  "gray-600":$gray-600,
+  "gray-900":$gray-900,
+);
 
-$spacer: 1rem;
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $font-size-base * .875,
+  8: $font-size-base * .75,
+);
+
 $spacers: (
   0: 0,
   1: $spacer * .25,
@@ -15,3 +29,11 @@ $nav-link-padding-x:2rem;
 $nav-link-color: black;
 $nav-link-hover-color:$success;
 $nav-link-font-weight:700;
+
+$form-select-indicator-color: $success;
+$form-select-border-color:transparent;
+$form-select-font-weight:700;
+
+
+
+$card-spacer-y:2rem;

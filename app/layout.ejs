@@ -12,55 +12,56 @@
 
 <body>
   <div class="d-flex">
-    <aside class="l-aside bg-light">
-      <div>
-        <img src="./assets/images/logo-ANSWER.svg" alt="" class="mw-100 p-5 mb-4">
-      <ul class="nav flex-column mb-auto">
-        <li class="nav-item">
-          <a class="nav-link d-flex l-aside__nav--active"  href="#">
-            <span class="material-icons fs-4 align-middle me-3">space_dashboard</span>Dashboard
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="material-icons align-middle me-3">question_answer</span>Question
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="material-icons align-middle me-3">assignment</span>Assignment
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="material-icons align-middle me-3">video_library</span>Course
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="material-icons align-middle me-3">people</span>Admin
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="material-icons align-middle me-3">settings</span>Settings
-          </a>
-        </li>
-      </ul>
+    <aside class="l-aside">
+        <div class="fixed">
+          <div>
+            <img src="./assets/images/logo-ANSWER.svg" alt="" class="mw-100 p-5 mb-4">
+            <ul class="nav flex-column mb-auto">
+              <li class="nav-item">
+                <a class="nav-link d-flex l-aside__nav--active"  href="index.html">
+                  <span class="material-icons fs-4 align-middle me-3">space_dashboard</span>Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">question_answer</span>Question
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assignment.html">
+                  <span class="material-icons align-middle me-3">assignment</span>Assignment
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">video_library</span>Course
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">people</span>Admin
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">settings</span>Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex p-5">
+            <div class="flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
+              " alt="" class="userImage">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h3 class="fs-6">Andy Chen</h3>
+              <small>andy0401@mail.com</small>
+            </div>
+          </div>
       </div>
-      <div class="d-flex p-5">
-        <div class="flex-shrink-0">
-          <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
-          " alt="" class="userImage">
-        </div>
-        <div class="flex-grow-1 ms-3">
-          <h3 class="fs-6 mb-0">Andy Chen</h3>
-          <small>andy0401@mail.com</small>
-        </div>
-      </div>
-      
-  </aside>
-  <main class="l-main flex-grow-1">
+    </aside>
+  <main class="l-main">
     <%- contents %>
   </main>
   </div>
