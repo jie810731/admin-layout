@@ -46,8 +46,12 @@
                   <span class="material-icons align-middle me-3">video_library</span>Course
                 </a>
               </li>
+              <% if (current == 'admin') { %>
+                <li class="nav-item  l-aside__nav-item--active">
+              <% } else{ %>  
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <% } %>
+                <a class="nav-link" href="admin.html">
                   <span class="material-icons align-middle me-3">people</span>Admin
                 </a>
               </li>

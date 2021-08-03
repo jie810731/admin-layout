@@ -1,0 +1,19 @@
+.p-admin{
+    .dropdown-toggle::after{
+        color: $success;
+    }
+    .click{
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .click--width{
+        width: 48px;
+    }
+    .modal-img{
+        width: 141px;
+        height: 141px;
+        object-fit: cover;
+    }
+}

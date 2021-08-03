@@ -1,7 +1,7 @@
 @include list-group-item-variant(gray-100, $gray-100, $black);
 
 @each $key,$value in $font-colors {
-    .color-#{$key} {
+    .text-#{$key} {
         color: $value;
     }
 }

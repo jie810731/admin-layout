@@ -1,0 +1,92 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+<div class="p-admin">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <div class="dropdown dropdown-toggle">
+                        ID
+                    </div>
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col" class="click--width"></th>
+                <th scope="col" class="click--width"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">#1</th>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td>@mdo</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click">
+                        edit
+                    </span>
+                </td>
+            </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="previewModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-5">
+                    <div class="d-flex text-dark">
+                        <div class="flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1350&q=80" alt="" class="modal-img">
+                        </div>
+                        <div class="flex-grow-1 ms-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h6>#1</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <h6>
+                                Admin
+                            </h6>
+                            <h4 class="fw-bold">Emir Wicks</h4>
+                            <small class="text-gray-600 d-block mb-3">emir.wicks@mail.com</small>
+                            <div id="verified-area" class="d-flex mb-5 justify-content-between" data-bs-toggle="collapse" data-bs-target="#collapseVerified" aria-expanded="false" aria-controls="collapseVerified">
+                                <button class="btn btn-light py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVerified" aria-expanded="false" aria-controls="collapseVerified">
+                                    Verified
+                                </button>
+                                <div id="verified-dropup-icon" class="123">
+                                    <button type="button" class="btn dropdown-toggle dropup"></button>
+                                </div>
+                                
+                            </div>
+                            <div class="collapse" id="collapseVerified">
+                                <button type="button" class="btn btn-outline-danger py-2 px-5 me-3" data-bs-dismiss="modal" aria-label="Close">Deactivate</button>
+                                <button type="button" class="btn btn-success py-2 px-5" data-bs-dismiss="modal" aria-label="Close">Edit</button>
+                            </div>
+                            <!-- Default dropup button -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

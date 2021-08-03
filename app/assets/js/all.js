@@ -1,5 +1,5 @@
-console.log('Hello!');
-
 $(document).ready(() => {
-  console.log('HesSchool Hello!');
+  $("#verified-area").click(function() {
+    $("#verified-dropup-icon").toggleClass( "dropup" )
+  });
 });
