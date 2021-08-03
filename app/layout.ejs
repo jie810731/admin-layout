@@ -18,7 +18,12 @@
             <img src="./assets/images/logo-ANSWER.svg" alt="" class="mw-100 p-5 mb-4">
             <ul class="nav flex-column mb-auto">
               <li class="nav-item">
-                <a class="nav-link d-flex l-aside__nav--active"  href="index.html">
+                <% if (current == 'index') { %>
+                  <li class="nav-item  l-aside__nav-item--active">
+                <% } else{ %>  
+                  <li class="nav-item">
+                <% } %>
+                <a class="nav-link d-flex"  href="index.html">
                   <span class="material-icons fs-4 align-middle me-3">space_dashboard</span>Dashboard
                 </a>
               </li>
@@ -27,7 +32,11 @@
                   <span class="material-icons align-middle me-3">question_answer</span>Question
                 </a>
               </li>
-              <li class="nav-item">
+              <% if (current == 'assignment') { %>
+                <li class="nav-item  l-aside__nav-item--active">
+              <% } else{ %>  
+                <li class="nav-item">
+              <% } %>
                 <a class="nav-link" href="assignment.html">
                   <span class="material-icons align-middle me-3">assignment</span>Assignment
                 </a>

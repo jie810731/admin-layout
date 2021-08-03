@@ -9,12 +9,23 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .nav-item{
+        position: relative;
+    }
+    &__nav-item--active{
+        &::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            color: $success;
+            border-left: 4px solid $success;
+        }
+    }
 }
 
-.l-aside__nav--active {
-    color: $success;
-    border-left: 4px solid $success;
-}
+// .l-aside__nav--active {
+    
+// }
 
 .l-main {
     padding: 2rem;
