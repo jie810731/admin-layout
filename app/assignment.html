@@ -109,7 +109,7 @@ current: assignment
                             </button>
                     </div>
                 </li>
-                <li class="list-group-item border-bottom-0">
+                <li class="list-group-item border-bottom-0 position-relative">
                     <div class="card border-0 flex-row pt-2 color-gray-900">
                         <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="" class="userImage me-2 flex-shrink-0">
                         <div class="pb-3">
@@ -137,6 +137,12 @@ current: assignment
                                 <li>adjust the <span class="text-success second-font-family">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success second-font-family">middle</span> ) or</li>
                                 <li>change the <span class="text-success second-font-family">display</span> so it isn’t inline.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="p-relpy">
+                        <div id="editor">
+                            
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -161,3 +167,12 @@ current: assignment
         </div>
     </div>
 </div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>

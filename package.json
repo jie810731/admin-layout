@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@types/popper.js": "^1.11.0",
     "autoprefixer": "^9.6.0",
     "bootstrap": "^5.0.2",
     "browser-sync": "^2.26.7",

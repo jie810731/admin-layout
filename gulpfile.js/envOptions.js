@@ -44,6 +44,8 @@ let envOptions = {
   vendors: {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
+      `${nodePath}/popper.js/dist/umd/popper.min.js`,
+      `${nodePath}/bootstrap/dist/js/bootstrap.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,
