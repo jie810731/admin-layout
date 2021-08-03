@@ -70,7 +70,24 @@
           </div>
       </div>
     </aside>
+    
   <main class="l-main">
+    <nav class="navbar navbar-light">
+      <div class="d-flex align-items-center">
+        <h4 class="navbar-brand"><%- title %></h4>
+        <% if (current == 'assignment') { %>
+          <%- include('template/nav/assignment.html'); %>
+        <% } %>
+      </div>
+      <div>
+          <span class="material-icons me-4">
+              search
+          </span>
+          <span class="material-icons">
+              notifications
+          </span>
+      </div>
+    </nav>
     <%- contents %>
   </main>
   </div>

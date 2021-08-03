@@ -9,11 +9,11 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .nav-item{
+    .nav-item {
         position: relative;
     }
-    &__nav-item--active{
-        &::before{
+    &__nav-item--active {
+        &::before {
             content: '';
             position: absolute;
             height: 100%;
@@ -23,11 +23,8 @@
     }
 }
 
-// .l-aside__nav--active {
-    
-// }
-
 .l-main {
+    width: 100%;
     padding: 2rem;
 }
 

@@ -15,12 +15,15 @@ let envOptions = {
       `!${srcPath}/assets/style/**/*.sass`,
       `!${srcPath}/**/*.ejs`,
       `!${srcPath}/**/*.html`,
+      `!${srcPath}/template`,
+      `!${srcPath}/template/**`,
     ],
     path: distPath,
   },
   html: {
     src: [
       `${srcPath}/**/*.html`,
+      `!${srcPath}/template/**`,
     ],
     ejsSrc: [
       `${srcPath}/**/*.ejs`,
