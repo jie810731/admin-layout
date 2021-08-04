@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
@@ -20,11 +20,9 @@
             </a>
             <ul class="nav flex-column mb-auto">
               <li class="nav-item">
-                <% if (current == 'index') { %>
+                
                   <li class="nav-item  l-aside__nav-item--active">
-                <% } else{ %>  
-                  <li class="nav-item">
-                <% } %>
+                
                 <a class="nav-link d-flex"  href="index.html">
                   <span class="material-icons fs-4 align-middle me-3">space_dashboard</span>Dashboard
                 </a>
@@ -34,11 +32,9 @@
                   <span class="material-icons align-middle me-3">question_answer</span>Question
                 </a>
               </li>
-              <% if (current == 'assignment') { %>
-                <li class="nav-item  l-aside__nav-item--active">
-              <% } else{ %>  
+                
                 <li class="nav-item">
-              <% } %>
+              
                 <a class="nav-link" href="assignment.html">
                   <span class="material-icons align-middle me-3">assignment</span>Assignment
                 </a>
@@ -48,11 +44,9 @@
                   <span class="material-icons align-middle me-3">video_library</span>Course
                 </a>
               </li>
-              <% if (current == 'admin') { %>
-                <li class="nav-item  l-aside__nav-item--active">
-              <% } else{ %>  
+                
               <li class="nav-item">
-                <% } %>
+                
                 <a class="nav-link" href="admin.html">
                   <span class="material-icons align-middle me-3">people</span>Admin
                 </a>
@@ -80,13 +74,9 @@
   <main class="l-main">
     <nav class="navbar navbar-light">
       <div class="d-flex align-items-center">
-        <h4 class="navbar-brand"><%- title %></h4>
-        <% if (current == 'assignment') { %>
-          <%- include('template/nav/assignment.html'); %>
-        <% } %>
-        <% if (current == 'admin') { %>
-          <%- include('template/nav/admin.html'); %>
-        <% } %>
+        <h4 class="navbar-brand">Dashboard</h4>
+        
+        
       </div>
       <div>
           <span class="material-icons me-4">
@@ -97,7 +87,7 @@
           </span>
       </div>
     </nav>
-    <%- contents %>
+    
   </main>
   </div>
   <script src="./assets/js/vendors.js"></script>

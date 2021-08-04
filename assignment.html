@@ -1,10 +1,97 @@
----
-title: Assignment
-layout: ./app/layout.ejs
-engine: ejs
-current: assignment
----
-<div class="d-flex justify-content-between align-items-center">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex">
+    <aside class="l-aside">
+        <div class="fixed">
+          <div>
+            <a href="index.html" class="d-block">
+              <img src="./assets/images/logo-ANSWER.svg" alt="" class="mw-100 p-5 mb-4">
+            </a>
+            <ul class="nav flex-column mb-auto">
+              <li class="nav-item">
+                  
+                  <li class="nav-item">
+                
+                <a class="nav-link d-flex"  href="index.html">
+                  <span class="material-icons fs-4 align-middle me-3">space_dashboard</span>Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">question_answer</span>Question
+                </a>
+              </li>
+              
+                <li class="nav-item  l-aside__nav-item--active">
+              
+                <a class="nav-link" href="assignment.html">
+                  <span class="material-icons align-middle me-3">assignment</span>Assignment
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">video_library</span>Course
+                </a>
+              </li>
+                
+              <li class="nav-item">
+                
+                <a class="nav-link" href="admin.html">
+                  <span class="material-icons align-middle me-3">people</span>Admin
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons align-middle me-3">settings</span>Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex p-5">
+            <div class="flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80
+              " alt="" class="userImage">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h3 class="fs-6">Andy Chen</h3>
+              <small>andy0401@mail.com</small>
+            </div>
+          </div>
+      </div>
+    </aside>
+    
+  <main class="l-main">
+    <nav class="navbar navbar-light">
+      <div class="d-flex align-items-center">
+        <h4 class="navbar-brand">Assignment</h4>
+        
+          <select class="form-select ps-0">
+    <option selected>All Courses</option>
+</select>
+        
+        
+      </div>
+      <div>
+          <span class="material-icons me-4">
+              search
+          </span>
+          <span class="material-icons">
+              notifications
+          </span>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-between align-items-center">
     <select class="p-assignment-category form-select ps-0 pe-1">
         <option selected>All (4)</option>
     </select>
@@ -159,3 +246,10 @@ current: assignment
             console.error( error );
         } );
 </script>
+  </main>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
