@@ -5,7 +5,7 @@ engine: ejs
 current: admin
 ---
 <div class="p-admin">
-    <table class="table">
+    <table class="table table-hover p-admin__table">
         <thead>
             <tr>
                 <th scope="col">
@@ -23,9 +23,9 @@ current: admin
         <tbody>
             <tr>
                 <th scope="row">#1</th>
+                <td>Emir Wicks</td>
                 <td>emir.wicks@mail.com</td>
                 <td>Yes</td>
-                <td>@mdo</td>
                 <td>
                     <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
                         visibility
@@ -37,19 +37,169 @@ current: admin
                     </span>
                 </td>
             </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+            <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>sabrina.stephenson@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#viewModal">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="material-icons click" data-bs-toggle="modal" data-bs-target="#editModal">
+                        edit
+                    </span>
+                </td>
+            </tr>
         </tbody>
     </table>
+    <ul class="pagination justify-content-end">
+        <a class="page-link" href="#" aria-label="Previous">
+            <span class="material-icons fs-6 align-middle">
+                chevron_left
+            </span>
+        </a>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span class="material-icons fs-6 align-middle">
+                    chevron_right
+                    </span>
+            </a>
+        </li>
+    </ul>
     <!-- previewModal -->
     <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="previewModal" aria-hidden="true">
         <div class="modal-dialog">
