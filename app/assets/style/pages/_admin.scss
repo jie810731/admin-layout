@@ -1,19 +1,27 @@
-.p-admin{
-    .dropdown-toggle::after{
+.p-admin {
+    .dropdown-toggle::after {
         color: $success;
     }
-    .click{
+    .click {
         width: 100%;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
-    .click--width{
+    .click--width {
         width: 48px;
     }
-    .modal-img{
+    .modal-img {
         width: 141px;
         height: 141px;
         object-fit: cover;
+    }
+    .form-control {
+        &[readonly] {
+            background-color: $gray-100;
+        }
+    }
+    &__hr {
+        margin: 1.5rem 0;
     }
 }
